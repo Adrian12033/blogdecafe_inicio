@@ -148,8 +148,31 @@ img {
     margin-bottom: 2rem;
 }
 
-.entrada:last-of-type {
+.entrada:last-of-type { /*esto de aquí es para que no se le aplique a la ultima entrada de la lista*/
     border: none;
     margin-bottom: 0;
 }
 
+
+.boton {
+    display: block;
+    font-family: var(--fuenteCabecera);
+    color: var(--blanco);
+    text-align: center;
+    padding: 1rem 3rem;
+    font-size: 1.8rem;
+    text-transform: uppercase; /*mayusculas*/
+    font-weight: 700;
+    margin-bottom: 2rem;
+
+}
+
+@media (min-width: 768px) {
+    .boton {
+        display: inline-block; /*usa el espacio que necesita*/
+    }
+}
+
+.boton--primario {
+    background-color: var(--negro);
+}
