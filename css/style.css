@@ -37,6 +37,7 @@ a {
 
 h1, h2, h3, h4 {
     font-family: var(--fuenteCabecera);
+    line-height: normal;
 }
 
 h1 {
@@ -99,6 +100,10 @@ img {
     }
 }
 
+.barra {
+    padding-top: 4rem;
+}
+
 @media (min-width: 768px) {
     .barra {
         display: flex;
@@ -127,7 +132,7 @@ img {
 }
 
 .navegacion__enlace {
-    display: block; /*para que se pponga uno debajo del otro*/
+    display: block; /*para que se ponga uno debajo del otro*/
     text-align: center;
     font-size: 1.8rem;
     color: var(--blanco);
@@ -175,4 +180,42 @@ img {
 
 .boton--primario {
     background-color: var(--negro);
+}
+
+.boton--secundario {
+    background-color: var(--primario);
+}
+
+.cursos {
+    list-style: none; /*para quitar los puntos de las listas*/
+}
+
+.widget-curso {
+    border-bottom: 1px solid var(--gris);
+    margin-bottom: 2rem;
+}
+
+.widget-curso:last-of-type {
+    border: none;
+    border-bottom: 0;
+}
+
+.widget-curso__label {
+    font-family: var(--fuenteCabecera);
+    font-weight: bold;
+}
+
+.widget-curso__info {
+    font-weight: normal;
+}
+
+.widget-curso__info,
+.widget-curso__label {
+    font-size: 2rem;
+}
+
+.footer {
+    background-color: var(--negro);
+    padding-bottom: 3rem;
+    margin-top: 4rem;
 }
